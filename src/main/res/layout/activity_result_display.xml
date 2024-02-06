@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ResultDisplayActivity">
+
+        <ImageView
+            android:id="@+id/bookImageView"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints,ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="21sp"
+            android:layout_toEndOf="@id/bookImageView"
+            android:layout_alignTop="@id/bookImageView"
+            android:layout_marginStart="3dp"
+            android:textAppearance="@font/cairo_semibold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="12sp"
+            android:layout_below="@id/titleTextView"
+            android:layout_alignStart="@id/titleTextView"
+            android:paddingTop="5dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textSize="16sp"
+            android:layout_below="@id/dateTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="87dp"
+            android:layout_marginRight="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:layout_below="@id/textTextView"
+            android:layout_marginTop="8dp" />
+
+        <ImageButton
+            android:id="@+id/grayStarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/titleTextView"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/titleTextView"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/goldStarBtn"
+            android:layout_toEndOf="@id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/titleTextView"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    </RelativeLayout>
+</ScrollView>
